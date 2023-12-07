@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("bg.jpg") no-repeat center;
+  background-size: cover; /*창 사이즈 키우거나 줄여도 배경 크기 조절*/ 
+}
+
+body h1{
+  color:#fff;
+}
+
+body::before{
+  content: "";
+  position: absolute; z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0,.7);
+}
+
+.login-form{
+  position:  relative; z-index: 2;
+}
+
+.login-form h1{
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.int-area{
+  width: 400px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.int-area:first-child{
+  margin-top: 0;
+}
+
+.int-area input{
+  width: 100%;
+  padding: 20px 10px 10px;
+  background-color: transparent; /*배경 투명하게*/
+  border: none;
+  border-bottom: 1px solid #999;
+  font-size: 18px; color: #fff;
+  outline: none; /*밑에 줄 하나만 남기게 함*/
+}
+
+.int-area label{
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  font-size: 18px;
+  color: #999;
+  transition: all .5s ease;  /*글자 위로 붕 올라가게 USERNAME 글자가 아이디 입력하면 올라감*/
+}
+
+.int-area label.warning{
+  color: red; /*username password가 색이 붉은색으로 변함 중요한 내용 설정한듯*/
+  animation: warning .5s ease;
+  animation-iteration-count: 3;
+}
+
+@keyframes warning{
+  0% {transform: translateX(-8px);}
+  25% {transform: translateX(8px);}
+  50% {transform: translateX(-8px);}
+  75% {transform: translateX(8px);}   /*워닝 때 떨리는 효과인데, 지속되는 시작때 좌로 8px이동 그다음 25퍼땐 우로 8px이동하는 방식으로 떨림 효과*/
+}
+
+.int-area input:focus + label,
+.int-area input:valid + label{
+  top: -2px;
+  font-size: 13px; color: #166cea; /*위로 붕 올라갈 때의 속성*/
+}
+
+.btn-area{
+  margin-top: 30px;
+}
+
+.btn-area button {
+  width: 100%;
+  height: 50px;
+  background: #166cea;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.caption{
+  margin-top: 20px;
+  text-align: center;
+}
+.caption a{
+  font-size: 15px; color: #999;
+  text-decoration: none;
+}

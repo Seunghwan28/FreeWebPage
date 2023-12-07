@@ -1,0 +1,192 @@
+@font-face {
+    font-family: abster;
+    src:url(font/abster-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'NEXONLv1Gothic';
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXONLv1Gothic';
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-style: normal;
+}
+
+.GotoMain{
+    float: left;
+    margin-top: 0;
+    width: 30px;
+    height: 80px;
+    background-color: transparent;
+    border: transparent;
+    font-family: abster;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header{
+    width: 82%;
+    height: 65px;
+    margin: 0 auto; /*원래 마진 레프트 오토 라이트 오토 다 써야하는데 이렇게 쓰면 간편*/
+    display: flex;
+    justify-content: space-between; /*좌우 끝에 붙어서 출력 h1이 왼쪽에 nav가 오른쪽에 붙어서*/
+    align-items: center; /*헤더의 위치 중에서 중간에 위치하게끔하는 코드*/
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('image/rays.png');
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+
+ul{
+    list-style: none;
+}
+li {
+    float: left;
+}
+
+.decision .MyD {
+    font-family: abster;
+    font-family: 'Staatliches', cursive;
+    font-size: 100px;
+    margin-right: 300px;
+    margin-left: 200px;
+    color: #40218d;
+    text-shadow: 5px 5px #ba1d3d;
+}
+
+.decision .YourD {
+    font-family: abster;
+    font-family: 'Staatliches', cursive;
+    font-size: 100px;
+    margin-left: 370px;
+    color: #f1f90f;
+    text-shadow: 5px 5px #2D63A7;
+}
+
+
+
+.resetBtn .reset {
+    position: relative;
+    border: 3px solid gold;
+    color: gold;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background-color: transparent;
+    width: 100px;
+    height: 100px; 
+    font-size: 20px;
+    color: rgb(32, 16, 97);
+    transition: all 0.4s;
+    overflow: hidden;
+    margin-left: 896px;
+    margin-top: -100px;
+}
+
+.resetBtn .reset:focus {
+    outline: none;
+}
+
+.resetBtn .reset::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: gold;
+    top: 100%;
+    left: 0;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.resetBtn .reset:hover::before{
+    transform: translateY(-100%);
+}
+
+.resetBtn .reset:hover{
+    color: rgb(32, 16, 97);
+}
+
+.ourchoice {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.ourchoice .our-img {
+    position: relative;
+    margin-left: 0px;
+    margin-right: 2600px;
+    margin-top: 270px;
+}
+
+.ourchoice .our-img .rock {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.ourchoice .our-img .paper {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.ourchoice .our-img .scissors {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.slider-wrap {
+    position: relative;
+    display: flex;
+    margin-top: 0%;
+    justify-content: center;
+    height: 50px;
+}
+
+.slider-img {
+    position: relative;
+    margin-left: 1000px;
+    width: 200px;   
+    height: 100px;
+}
+
+.slider-img img {
+    width: 80%;
+}
+
+.slider {
+    position: relative;
+    left: 0; top: 10px; right: 100px;
+}
+
+.slider::before {
+    position: relative;
+    left:0; top: 100px; right: 50px;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    padding: 5px 10px 3px;
+    font-family: "NEXONLv1Gothic";
+}
+
+.slider:nth-child(1){z-index: 3;}
+.slider:nth-child(2){z-index: 2;}
+.slider:nth-child(3){z-index: 1;}

@@ -1,0 +1,107 @@
+@font-face {
+    font-family: abster;
+    src:url(font/abster-webfont.woff) format('woff');
+}
+
+*{  /*전체해당 사항에대해서 css를 걸 때 이렇게함*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.GotoMain{
+    float: left;
+    margin-top: 0;
+    width: 30px;
+    height: 80px;
+    background-color: transparent;
+    border: transparent;
+    font-family: abster;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(image/back.jpg); /*배경 좀 어둡어둡하게 하는거*/
+}
+
+.container .header{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto; /*원래 마진 레프트 오토 라이트 오토 다 써야하는데 이렇게 쓰면 간편*/
+    display: flex;
+    justify-content: space-between; /*좌우 끝에 붙어서 출력 h1이 왼쪽에 nav가 오른쪽에 붙어서*/
+    align-items: center; /*헤더의 위치 중에서 중간에 위치하게끔하는 코드*/
+}
+
+.container .btns{
+    position: relative;
+    top: 10%;
+    left: 0%;
+}
+
+.container .btns button{
+    border: 2px solid rgb(215, 121, 182);
+    padding: 15px 20px;
+    border-radius: 50px;
+    width: 256px;
+    height: 256px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.container .btns .firstrow{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container .btns .secondrow{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .btns .rsp-btn{
+    background-image: url(image/rsp.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.container .btns .ballbounce-btn{
+    background-image: url(image/bounceball.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.container .btns .treasureH-btn{
+    background-image: url(image/treasureH.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.container .btns .fishing-btn{
+    background-image: url(image/fishing.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.container .btns .dogpoop-btn{
+    background-image: url(image/poop.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.container .btns .flythecop-btn{
+    background-image: url(image/fly.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

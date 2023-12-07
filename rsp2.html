@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rsp2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <title>RSP2 Page</title>
+</head>
+<body>
+    <div class="header">
+        <button type="button" class="GotoMain" onClick="location.href='rsp.html'">DESIGN</button>      
+    </div>
+    <ul class="decision">
+        <li class="MyD">나의 선택</li>
+        <li class="YourD">상대방</li>
+    </ul>
+    <div class="ourchoice">
+        <div class="our-img">
+                <button class="paper" onclick="DecideResult1()"><img src="image/paper.jpg"></button>
+                <button class="rock" onclick="DecideResult2()"><img src="image/rock.jpg"></button>                
+                <button class="scissors" onclick="DecideResult3()"><img src="image/scissors.jpg"></button>
+        </div>
+    </div>
+    <div class="resetBtn">
+            <button class="reset" onclick="location.reload();">RESET</button>
+    </div>
+    </div>
+    <div class="slider-wrap">
+        <div class="slider-img">            
+            <div class="slider"><img src="image/paper.jpg"></div>
+            <div class="slider"><img src="image/rock.jpg"></div>
+            <div class="slider"><img src="image/scissors.jpg"></div>
+        </div>
+    </div>
+</body>
+<script src="rsp2.js"></script>  
+</html>
